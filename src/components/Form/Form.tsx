@@ -1,16 +1,10 @@
 import Botao from "../Botao/Botao";
 import Input from "../Input/Input";
-import { ICards } from "../PersonCard/types";
 import Select from "../Select/Select";
 import Title from "../Title/Title";
-
 import Section from "../Section/Section";
 import { useState } from "react";
-
-interface IForm {
-  teams: string[];
-  cardRegistered: (card: ICards) => void;
-}
+import { IForm } from "./types";
 
 export default function Form({ teams, cardRegistered }: IForm) {
   const [name, setName] = useState("");
