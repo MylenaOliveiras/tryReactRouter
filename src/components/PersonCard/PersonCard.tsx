@@ -1,16 +1,11 @@
-export interface IPersonCards {
-  name: string;
-  position: string;
-  image: string;
-  team: string;
-  primaryColor: string;
-}
+import { ICards } from "./types";
+
 export default function PersonCard({
   name,
   position,
   image,
   primaryColor,
-}: IPersonCards) {
+}: ICards) {
   return (
     <div className="w-64 bg-white rounded-xl center min-w-min pb-4 my-10">
       <header className={`h-24 rounded-t-xl	-mb-14 ${primaryColor}`}></header>
