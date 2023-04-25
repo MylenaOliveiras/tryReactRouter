@@ -1,4 +1,4 @@
-import { ICards } from "../Card/Card";
+import { ICards } from "../PersonCard/types";
 
 export interface IBoard {
   cards: ICards[];
