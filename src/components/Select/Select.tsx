@@ -1,5 +1,3 @@
-import React from "react";
-
 export interface ISelect {
   teams: string[];
   value: string;

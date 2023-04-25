@@ -1,6 +1,6 @@
 import Botao from "../Botao/Botao";
 import Input from "../Input/Input";
-import { ICards } from "../Card/Card";
+import { ICards } from "../PersonCard/types";
 import Select from "../Select/Select";
 import Title from "../Title/Title";
 
@@ -17,7 +17,7 @@ export default function Form({ teams, cardRegistered }: IForm) {
   const [position, setPosition] = useState("");
   const [image, setImage] = useState("");
   const [team, setTeam] = useState("");
-  const [primaryColor, setPrimaryColor] = useState("");
+  const [primaryColor] = useState("");
 
   const [showForm, setShowForm] = useState(false);
   function visible() {
